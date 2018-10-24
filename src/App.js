@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CardList from './CardList';
+import Checkbox from './Checkbox';
 
 class App extends Component {
   constructor(props) {
@@ -28,7 +29,10 @@ class App extends Component {
     (
       <div className="text-center">
         <h1>Coins and Stocks</h1>
-        <CardList coinObj={ coinObj } />
+        <div>
+          <Checkbox />
+          <CardList coinObj={ coinObj } />
+        </div>
       </div>
     );
   }
