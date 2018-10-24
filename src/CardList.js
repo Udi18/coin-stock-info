@@ -14,6 +14,7 @@ const CardList = ({coinObj}) => {
                             rank={coinObj[object.coinId].rank} 
                             price={coinObj[object.coinId].quotes["USD"].price} 
                             percentChange24={coinObj[object.coinId].quotes["USD"].percent_change_24h}
+                            percentChange7D={coinObj[object.coinId].quotes["USD"].percent_change_7d}
                             logoImg={object.coinImg} 
                         />
                     )
