@@ -3,7 +3,7 @@ import React from 'react';
 const Card = ({name, rank, price, percentChange24}) => {
     // destructering the data from api to be used.
     return (
-        <div className="card shadow" style={{width: '18rem'}}>
+        <div className="card shadow" style={{width: '18rem', margin: '.5rem', paddingBottom: '2rem', paddingTop: '1rem'}}>
             <img alt='coin/stock logo' src='https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png' className="mx-auto card-img-top w-50 h-50" />
             <div className="card-body">
                 <h2 className="card-title text-center">{name}</h2>

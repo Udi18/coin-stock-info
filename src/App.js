@@ -26,7 +26,7 @@ class App extends Component {
     return coinObj === null ?
       <h2>Loading</h2> :    
     (
-      <div>
+      <div className="text-center">
         <h1>Coins and Stocks</h1>
         <CardList coinObj={ coinObj } />
       </div>
