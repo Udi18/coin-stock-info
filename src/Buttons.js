@@ -1,7 +1,7 @@
 import React from 'react';
 import {coinsIdObjectArr} from './coinsIdObjectArr'
 
-const Checkbox = () => {
+const Buttons = () => {
     return (
         <div className="d-flex flex-row p-5 justify-content-center">
             {
@@ -13,4 +13,4 @@ const Checkbox = () => {
     )
 }
 
-export default Checkbox;
+export default Buttons;
