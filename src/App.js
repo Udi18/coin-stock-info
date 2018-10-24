@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CardList from './CardList';
 import Checkbox from './Checkbox';
+import TitleBar from './TitleBar';
 
 class App extends Component {
   constructor(props) {
@@ -27,8 +28,8 @@ class App extends Component {
     return coinObj === null ?
       <h2>Loading</h2> :    
     (
-      <div className="text-center">
-        <h1>Coins and Stocks</h1>
+      <div>
+        <TitleBar />
         <div>
           <Checkbox />
           <CardList coinObj={ coinObj } />
