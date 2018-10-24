@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CardList from './CardList';
-import Checkbox from './Checkbox';
+import Buttons from './Buttons';
 import TitleBar from './TitleBar';
 
 class App extends Component {
@@ -31,7 +31,7 @@ class App extends Component {
       <div>
         <TitleBar />
         <div>
-          <Checkbox />
+          <Buttons />
           <CardList coinObj={ coinObj } />
         </div>
       </div>
