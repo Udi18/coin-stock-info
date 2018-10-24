@@ -9,8 +9,8 @@ const Card = ({name, rank, price, percentChange24, logoImg, percentChange7D}) =>
                 <h2 className="card-title text-center">{name}</h2>
                 <h5 className="text-center">{`Rank: ${rank}`}</h5>
             </div>
-            <ul className="list-group list-group-flush" style={{fontSize: '1rem'}}>
-                <li className="list-group-item font-weight-bold">{`Price: $${price.toFixed(3)}`}</li>
+            <ul className="list-group list-group-flush text-nowrap" style={{fontSize: '1rem'}}>
+                <li className="list-group-item">{`Price: `}<b className="font-weight-bold">{`$${price.toFixed(3)}`}</b></li>
                 <li className="list-group-item">{`Change over 24hrs: ${percentChange24}%`}</li>
                 <li className="list-group-item">{`Change over 7 days: ${percentChange7D}%`}</li>
             </ul>
