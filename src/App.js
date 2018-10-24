@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import CardList from './CardList';
 // a test file for starting off.
 // import { coinObj } from './coinObj';
