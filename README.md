@@ -1,2 +1,2 @@
-This is a project that pulls information about the specificied cryptocurrencies from www.CoinMarketCap.com
+This is a project that pulls information about the specified cryptocurrencies from www.CoinMarketCap.com
 
