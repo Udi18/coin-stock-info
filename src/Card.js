@@ -2,8 +2,6 @@ import React from 'react';
 
 const Card = ({name, rank, price, percentChange24}) => {
     // destructering the data from api to be used.
-    // should break up props first but I am trouble shooting other stuff.....................!
-    // const {name, rank, price, percentChange24} = props;
     return (
         <div className="card shadow" style={{width: '18rem'}}>
             <img alt='coin/stock logo' src='https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png' className="mx-auto card-img-top w-50 h-50" />
