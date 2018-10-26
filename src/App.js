@@ -2,12 +2,33 @@ import React, { Component } from 'react';
 import CardList from './CardList';
 import Buttons from './Buttons';
 import TitleBar from './TitleBar';
+import { coinsIdObjectArr } from './coinsIdObjectArr'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
       coinObj: null,
+      cardIdObjectArr: [],
+      buttonIdObjectArr: coinsIdObjectArr
+    }
+  }
+
+  onClick = (event) => {
+    const coinNum = +event.target.id
+    const newCardArr = coinsIdObjectArr.filter(coin => (coin.coinId === coinNum));
+    const newCardObj = newCardArr[0];
+    const compareArr = this.state.cardIdObjectArr.map((obj) => {
+        return  obj.coinId;
+      }
+    )
+    if(compareArr.includes(coinNum)) {
+      const newState = this.state.cardIdObjectArr.filter(obj => (obj.coinId !== coinNum));
+      this.setState({cardIdObjectArr: newState});
+
+    } else{
+    const newState = this.state.cardIdObjectArr.concat(newCardObj);
+    this.setState({cardIdObjectArr: newState});
     }
   }
 
@@ -31,8 +52,8 @@ class App extends Component {
       <div>
         <TitleBar />
         <div>
-          <Buttons />
-          <CardList coinObj={ coinObj } />
+          <Buttons click={ this.onClick } buttonIdObjectArr={ this.state.buttonIdObjectArr } />
+          <CardList coinObj={ coinObj } cardIdObjectArr={ this.state.cardIdObjectArr } />
         </div>
       </div>
     );
