@@ -49,8 +49,10 @@ class App extends Component {
     return coinObj === null ?
       <h2>Loading</h2> :    
     (
-      <div>
+      <div className='text-center'>
         <TitleBar />
+        <h2>Grab your coins by clicking the buttons below</h2>
+        <p>All the data comes from CoinMarketCap</p>
         <div>
           <Buttons click={ this.onClick } buttonIdObjectArr={ this.state.buttonIdObjectArr } />
           <CardList coinObj={ coinObj } cardIdObjectArr={ this.state.cardIdObjectArr } />
