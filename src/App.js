@@ -9,7 +9,12 @@ class App extends Component {
     super()
     this.state = {
       coinObj: null,
-      cardIdObjectArr: [],
+      cardIdObjectArr: [
+        {coinId: 1, name: 'Bitcoin', coinImg: "https://en.bitcoin.it/w/images/en/2/29/BC_Logo_.png"},
+        {coinId: 1027, name: 'Ethereum', coinImg: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/256px-Ethereum_logo_2014.svg.png"},
+        {coinId: 52, name: 'XRP', coinImg: "https://www.bitprime.co.nz/wp-content/uploads/2017/06/xrp-symbol-black-400x400.png"},
+        {coinId: 1831, name: 'Bitcoin Cash', coinImg: "https://www.bitcoincash.org/media-kit/3-bitcoin-cash-logo-ot-small.png"},
+      ],
       buttonIdObjectArr: coinsIdObjectArr
     }
   }
