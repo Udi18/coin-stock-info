@@ -1,12 +1,11 @@
 import React from 'react';
 import Card from './Card';
-import {coinsIdObjectArr} from './coinsIdObjectArr'
 
-const CardList = ({coinObj}) => {
+const CardList = ({coinObj, cardIdObjectArr}) => {
     return (
         <div className="container-fluid row justify-content-center">
             {
-                coinsIdObjectArr.map((object) => {
+                cardIdObjectArr.map((object) => {
                     return (
                         <Card
                             key={object.coinId}
