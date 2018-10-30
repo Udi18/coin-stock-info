@@ -59,7 +59,7 @@ class App extends Component {
         <h2>Grab your coins by clicking the buttons below</h2>
         <p>All the data comes from CoinMarketCap</p>
         <div>
-          <Buttons click={ this.onClick } buttonIdObjectArr={ this.state.buttonIdObjectArr } />
+          <Buttons click={ this.onClick } buttonIdObjectArr={ this.state.buttonIdObjectArr } activeButtons={ this.state.cardIdObjectArr } />
           <CardList coinObj={ coinObj } cardIdObjectArr={ this.state.cardIdObjectArr } />
         </div>
       </div>
