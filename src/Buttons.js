@@ -5,9 +5,9 @@ const Buttons = ({click, buttonIdObjectArr, activeButtons}) => {
     const activeButtonArray = activeButtons.map(obj => obj.coinId)
     const determineClassName = (num) => {
         if(activeButtonArray.includes(num)) {
-            return `list-group-item shadow-sm m-1 p-2 active`
+            return `list-group-item pointer grow shadow-sm m-1 p-2 active`
         } else {
-            return `list-group-item shadow-sm m-1 p-2`
+            return `list-group-item pointer grow shadow-sm m-1 p-2`
         }
     }
    
