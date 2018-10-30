@@ -5,9 +5,9 @@ const Buttons = ({click, buttonIdObjectArr, activeButtons}) => {
     const activeButtonArray = activeButtons.map(obj => obj.coinId)
     const determineClassName = (num) => {
         if(activeButtonArray.includes(num)) {
-            return `"f5 dim black pointer list-group-item shadow-sm m-1 p-2 active"`
+            return `"f5 black pointer list-group-item shadow-sm m-1 p-2 active"`
         } else {
-            return `"f5 dim black pointer list-group-item shadow-sm m-1 p-2"`
+            return `"f5 black pointer list-group-item shadow-sm m-1 p-2"`
         }
     }
    

@@ -3,7 +3,7 @@ import React from 'react';
 const Card = ({name, rank, price, percentChange24, logoImg, percentChange7D, id}) => {
     // destructering the data from api to be used.
     return (
-        <div id={id} className="card shadow grow" style={{height: '370px', width: '247px', margin: '15px', paddingTop: '15px'}}>
+        <div id={id} className="card shadow" style={{height: '370px', width: '247px', margin: '15px', paddingTop: '15px'}}>
             <img alt='coin/stock logo' style={{ height: '90px', width: '70px'}} src={`${logoImg}`} className="mx-auto card-img-top" />
             <div className="card-body">
                 <h2 className="card-title text-center">{name}</h2>
